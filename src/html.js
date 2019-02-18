@@ -1,3 +1,10 @@
+// look for
+// <title>Human</title>
+// replace Human with [your name]
+
+// <meta name="description" content="Personal profile of Human"/>
+// replace what is inside content
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -7,13 +14,17 @@ export default class HTML extends React.Component {
             <html {...this.props.htmlAttributes} lang={'en-US'}>
             <head>
                 <meta charSet="utf-8" />
-                <title>Sean Chok</title>
+
+                <title>Human</title>
+
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
-                <meta name="description" content="Personal profile of Sean Chok"/>
+
+                <meta name="description" content="Personal profile of Human"/>
+
                 <link rel="stylesheet"
                       href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
                       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"

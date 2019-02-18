@@ -1,9 +1,14 @@
+// this is a json object that contains all sorts of information you want to be displayed.
+// enter relevant information, the comments next to input fields can help you
+
+// important note: store all needed image files into the static/ directory
+
 module.exports = {
-  myName: 'Your name',
-  description: 'simple description',
-  email: '', // mailto:seanchok@connect.hku.hk
-  linkedIn: '', // https://www.linkedin.com/in/sean-chok-9035b2144/
-  github: '', // https://github.com/98sean98
+  myName: 'Human', // [your name]
+  description: 'I am Human', // a simple description about yourself
+  email: 'mailto:huamn@gmail.com', // mailto:[your email]
+  linkedIn: '', // your linkedIn profile url
+  github: '', // your github profile url
   contents: {
     subsections: [
       // this is a subsection
@@ -11,10 +16,10 @@ module.exports = {
         tag: 'EDUCATION',
         content: [
           {
-            head: 'The University of Hong Kong',
-            description: 'Bachelor of Engineering',
-            subhead: 'September 2018 - June 2022',
-            image: 'HKULogo.png',
+            head: 'University of Awesomeness', // your university
+            description: 'Bachelor of Awesomeness', // your major
+            subhead: 'January 0000 - End of Time',
+            image: 'uni_of_awesomeness.png', // name of your image file
             action: 'none'
           }
         ]
@@ -25,60 +30,60 @@ module.exports = {
         tag: 'WORKING EXPERIENCE',
         content: [
           {
-            head: '',
-            subhead: '',
-            description: '',
-            image: '',
-            action: '' // relevant url, if you do not want any urls, write 'none'
+            head: 'Company of Memes',
+            subhead: 'Manager of Memes',
+            description: 'I work for this company, it\'s all memes.', // the \' is a backslash to escape ', as you may have noticed, all content are wrapped around a pair of '', so if you use ' for the purpose of english, this is going to start breaking code. That's why we use a \ to make sure that the following ' doesn't tell javascript to end the content there
+            image: 'company_of_memes.jpg',
+            action: 'none' // relevant url, if you do not want any urls, write 'none'
           },
-          // more stuff under WORKING EXPERIENCE subsection
-          {
-            head: '',
-            subhead: '',
-            description: '',
-            image: '',
-            action: ''
-          }
+          // more stuff under WORKING EXPERIENCE subsection - uncomment as needed
+          // {
+          //   head: '',
+          //   subhead: '',
+          //   description: '',
+          //   image: '',
+          //   action: ''
+          // }
         ]
       },
 
-      // more subsections
-      {
-        tag: 'PROJECTS AND OTHER EXPERIENCE',
-        content: [
-          {
-            head: '',
-            subhead: '',
-            description: '',
-            image: '',
-            action: ''
-          },
-        ]
-      },
-      {
-        tag: 'LEADERSHIP ROLES',
-        content: [
-          {
-            head: '',
-            subhead: '',
-            description: '',
-            image: '',
-            action: ''
-          }
-        ]
-      },
-      {
-        tag: 'ACHIEVEMENTS AND AWARDS',
-        content: [
-          {
-            head: '',
-            subhead: '',
-            description: '',
-            image: '',
-            action: ''
-          }
-        ]
-      }
+      // more subsections - uncomment as needed
+      // {
+      //   tag: 'PROJECTS AND OTHER EXPERIENCE',
+      //   content: [
+      //     {
+      //       head: '',
+      //       subhead: '',
+      //       description: '',
+      //       image: '',
+      //       action: ''
+      //     },
+      //   ]
+      // },
+      // {
+      //   tag: 'LEADERSHIP ROLES',
+      //   content: [
+      //     {
+      //       head: '',
+      //       subhead: '',
+      //       description: '',
+      //       image: '',
+      //       action: ''
+      //     }
+      //   ]
+      // },
+      // {
+      //   tag: 'ACHIEVEMENTS AND AWARDS',
+      //   content: [
+      //     {
+      //       head: '',
+      //       subhead: '',
+      //       description: '',
+      //       image: '',
+      //       action: ''
+      //     }
+      //   ]
+      // }
     ]
   }
 }
